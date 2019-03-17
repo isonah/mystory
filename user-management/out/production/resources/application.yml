@@ -1,0 +1,23 @@
+spring:
+  application:
+   name: mystory-user-management
+  datasource:
+    url: jdbc:mysql://localhost:3306/mystory?useSSL=false&useUnicode=true" +
+                                                        "&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: secret
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+        ddl-auto: validate
+    properties:
+      hibernate:
+        temp:
+        use_jdbc_metadata_defaults: false
+server:
+  servlet:
+    context-path: /user-management
+  port: 8086
+
+debug: true

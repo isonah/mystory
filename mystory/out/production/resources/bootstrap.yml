@@ -1,0 +1,5 @@
+spring:
+ application:
+  name: mystory-rest
+server:
+    port: 8081

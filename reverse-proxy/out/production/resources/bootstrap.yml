@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: mystory-proxy
+  cloud:
+    config:
+      uri: http://localhost:8083
+server:
+    port: 8765
+debug: true
+management:
+  security:
+    enabled: false

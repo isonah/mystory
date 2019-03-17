@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: mystory-server-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:///d:/projects/perso/server-conf-repo
+server:
+  port: 8083
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+debug: true
+
+

@@ -1,0 +1,13 @@
+server:
+    port: 8765
+zuul:
+    routes:
+        mystory-rest:
+            path: /stories/**
+            serviceId: mystory-rest
+            stripPrefix: false
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

@@ -1,0 +1,19 @@
+zuul:
+    routes:
+        mystory-rest:
+            path: /stories/**
+            sensitiveHeaders:
+            serviceId: mystory-rest
+            stripPrefix: false
+        user-management:
+                    path: /user-management/**
+                    sensitiveHeaders:
+                    serviceId: mystory-user-management
+                    stripPrefix: false
+        logout:
+           path: /oauth2/**
+           sensitiveHeaders:
+           serviceId: mystory-server-auth2
+           stripPrefix: false
+debug: true
+

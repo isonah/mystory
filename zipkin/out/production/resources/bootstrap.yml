@@ -1,0 +1,14 @@
+spring:
+ cloud:
+    config:
+       name: zipkin
+       discovery.service-id: config
+       discovery.enabled: true
+       username: configUser
+       password: configPassword
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+debug: false
